@@ -72,7 +72,7 @@ def head(title, desc, path, img="img/r-cuisine.jpg", extra=""):
 <meta property="og:title" content="{E(title)}"><meta property="og:description" content="{E(desc)}"><meta property="og:url" content="{SITE}/{path}"><meta property="og:image" content="{SITE}/{img}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#F4F1E6">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Crect width='120' height='120' rx='28' fill='%23F4F1E6'/%3E%3Cpath d='M84 26V94' stroke='%23E6E0D0' stroke-width='12' stroke-linecap='round'/%3E%3Cpath d='M84 26V50' stroke='%23C2531B' stroke-width='12' stroke-linecap='round'/%3E%3Ccircle cx='36' cy='27' r='7.5' fill='%231F4D3A'/%3E%3Cpath d='M36 44V94' stroke='%231F4D3A' stroke-width='12' stroke-linecap='round'/%3E%3Cpath d='M36 62L69 42' stroke='%231F4D3A' stroke-width='6' stroke-linecap='round'/%3E%3Ccircle cx='69' cy='42' r='8.5' fill='%231F4D3A'/%3E%3Cpath d='M48 82H63L61 96H50Z' fill='%231F4D3A'/%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon-96x96.png" sizes="96x96" type="image/png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#1F4D3A">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Urbanist:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
