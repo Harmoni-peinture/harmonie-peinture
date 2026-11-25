@@ -5,7 +5,7 @@ Site internet, identité visuelle et supports de communication d'**Harmonie Pein
 - Téléphones : 06 69 19 05 77 (Laurent Koy) · 06 12 21 27 58 (Nicolas Bonnet)
 - E-mail : harmonie.malleval@gmail.com
 - Adresse : 69 chemin de Rochecourbe, 42520 Malleval
-- Domaine : harmoniepeinture42.com (à brancher)
+- Domaine : harmonie-peinture.com (à brancher)
 
 ## Contenu du dépôt
 
@@ -20,10 +20,10 @@ Site internet, identité visuelle et supports de communication d'**Harmonie Pein
 Chaque modification enregistrée sur `main` met le site en ligne automatiquement en 1 à 2 minutes (`.github/workflows/pages.yml` publie le dossier `site/`).
 Adresse provisoire : https://harmoni-peinture.github.io/harmonie-peinture/
 
-Brancher le nom de domaine harmoniepeinture42.com :
-1. Créer le fichier `site/CNAME` contenant `www.harmoniepeinture42.com`.
+Brancher le nom de domaine harmonie-peinture.com :
+1. Créer le fichier `site/CNAME` contenant `www.harmonie-peinture.com`.
 2. Dans la zone DNS du domaine (Wix, OVH…), ajouter un enregistrement CNAME `www` → `harmoni-peinture.github.io`, et pour le domaine nu les 4 enregistrements A de GitHub Pages : 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153.
-3. Dans GitHub : Settings → Pages → Custom domain `www.harmoniepeinture42.com`, puis cocher « Enforce HTTPS ».
+3. Dans GitHub : Settings → Pages → Custom domain `www.harmonie-peinture.com`, puis cocher « Enforce HTTPS ».
 
 ## Modifier le site
 

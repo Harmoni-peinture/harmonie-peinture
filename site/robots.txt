@@ -17,4 +17,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://www.harmoniepeinture42.com/sitemap.xml
+Sitemap: https://www.harmonie-peinture.com/sitemap.xml

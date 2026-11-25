@@ -23,3 +23,6 @@ K2=8.4
 port=page(1440,1800,'turf-port.jpg',
   stack(BACK,K2,420,960,9,CA,CB,22,1)+stack(FRONT,K2,250,330,-11,GA,GB,28,2)+ball(1040,1400,280))
 open('m-port.html','w').write(port)
+
+for slug,n,t,tel in [('sophie-koy','Sophie Koy','Gestion & administration','06 69 19 05 77'),('nicolas-bonnet','Nicolas Bonnet','Associé fondateur','06 12 21 27 58')]:
+    open(f'm-{slug}.html','w').write(page(2400,1800,'turf-land.jpg',stack(FRONT,K,560,250,-9,GA,GB,28,2)+stack(back(n,t,tel),K,1120,860,7,CA,CB,24,1)+ball(1830,250,330)))

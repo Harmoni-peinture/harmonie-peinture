@@ -80,7 +80,7 @@ def ba(av,ap,h):
     return wrap('g',f'<div class="ba"><div style="background-image:url({av})"><span>Avant</span></div><div class="ap" style="background-image:url({ap})"><span>Après</span></div></div><div class="bal"></div><div class="bat"><h1>{h}</h1></div>',grain=False)
 FLAG='<svg class="flag" style="right:120px;top:300px" width="150" height="260" viewBox="0 0 150 260"><path d="M20 250V20" stroke="#F4F1E6" stroke-width="6" stroke-linecap="round"/><path d="M20 20l100 34-100 34z" fill="#C2531B"/><ellipse cx="20" cy="252" rx="36" ry="9" fill="rgba(0,0,0,.25)"/></svg>'
 POSTS=[
- ("01-lancement", photo("img/m-cuisine.jpg","Nouveau site","Le travail bien fait,<br>du sol au plafond.","Peinture, plâtrerie, isolation RGE et sols, autour de Malleval. Découvrez nos chantiers sur harmoniepeinture42.com")),
+ ("01-lancement", photo("img/m-cuisine.jpg","Nouveau site","Le travail bien fait,<br>du sol au plafond.","Peinture, plâtrerie, isolation RGE et sols, autour de Malleval. Découvrez nos chantiers sur harmonie-peinture.com")),
  ("02-depuis-1999", typo("Notre histoire","Depuis<br><em>1999.</em>","Plus de 25 ans à peindre, plâtrer et isoler les maisons du Pilat rhodanien et de la vallée du Rhône.")),
  ("03-avant-apres", ba("img/r-avant.jpg","img/r-apres.jpg","Même pièce.<br>Autre vie.")),
  ("04-avis-annie", quote("En 1 semaine fait. Le travail très bien et personnel exceptionnel au service de son client.","Annie Q.")),

@@ -51,7 +51,7 @@ def hook(img,pill,h,p='',pos='center',cta='Devis gratuit'):
     return f'''<div class="p hk"><div class="bg" style="background-image:url({img});background-position:{pos}"></div>
 <div class="bar"><span class="brand">{lg("i")}Harmonie</span><span class="pill">{pill}</span></div>
 <div class="txt"><h1 style="--fs:{fs(h)}px">{h}</h1>{f"<p>{p}</p>" if p else ""}</div>
-<div class="bt"><span>harmoniepeinture42.com</span><span><b>{cta}</b> · 06 69 19 05 77</span></div></div>'''
+<div class="bt"><span>harmonie-peinture.com</span><span><b>{cta}</b> · 06 69 19 05 77</span></div></div>'''
 def lgpost(img,bt='Peinture · Plâtrerie · Isolation · Sols',pos='center'):
     return f'''<div class="p lgp"><div class="bg" style="background-image:url({img});background-position:{pos}"></div>
 <div class="lk">{lg("i")}<b>Harmonie</b><small>Peinture</small></div><div class="bt">{bt}</div></div>'''
