@@ -1,0 +1,61 @@
+import json
+H={'p':'#PeintreEnBatiment','pl':'#Plaquiste','iso':'#IsolationRGE','car':'#Carrelage','reno':'#Renovation'}
+C=[
+("Besoin d'un coup de propre sur vos murs ? Passez par nous. Préparation, deux couches, chantier rendu propre. Devis gratuit après visite, autour de Malleval.","#PeintreEnBatiment #Malleval #Chavanay #PeintureInterieure #Renovation","Un coup de propre sur vos murs ? Devis gratuit après visite."),
+("Harmonie Peinture. Peinture, plâtrerie, isolation et sols, depuis 1999, dans le Pilat rhodanien et la vallée du Rhône.","#HarmoniePeinture #Malleval #PilatRhodanien #ArtisanPeintre","Harmonie Peinture : peinture, plâtrerie, isolation RGE et sols depuis 1999."),
+("Un mur. Deux couches. Zéro trace. C'est toute la différence entre un mur repeint et un mur bien repeint.","#Peinture #SavoirFaire #PeintreEnBatiment #Condrieu","Deux couches, zéro trace : notre méthode de peinture."),
+("Une cuisine repeinte du sol au plafond par nos équipes. Murs, plafond, boiseries.","#Cuisine #Renovation #Peinture #Chavanay #Pelussin","Cuisine repeinte : murs, plafond et boiseries."),
+("Peintres, plaquistes, artisans. Depuis 1999, une équipe salariée et une exigence qui ne change pas.","#Artisans #Depuis1999 #Malleval #Loire42","Artisans peintres et plaquistes depuis 1999 à Malleval."),
+("Avant la peinture, il y a la préparation : rebouchage, enduit, ponçage. C'est là que se joue un beau résultat.","#Platrerie #Preparation #Plaquiste #Renovation","Rebouchage, enduits, ponçage : la préparation fait le résultat."),
+("« En 1 semaine fait. » Merci Annie pour votre confiance.","#AvisClient #ArtisanDeConfiance #Malleval","Merci Annie pour votre avis 5 étoiles."),
+("Un carreau fendu ? On le remplace, pas toute la pièce. Dépose propre, carreau neuf, joints repris.","#Carrelage #RemplacementCarreau #Renovation #Vienne","Remplacement de carreaux cassés sans refaire la pièce."),
+("Peinture, carrelage, plâtrerie, sols : tous nos métiers, une seule équipe.","#Renovation #Peinture #Carrelage #Plaquiste #Malleval","Tous nos métiers, une seule équipe : peinture, plâtrerie, carrelage, sols."),
+("Votre peinture farine, fissure ou se tache ? Voici les 3 signes qu'il est temps de repeindre. Enregistrez ce post.","#ConseilDePeintre #Peinture #Maison","3 signes qu'un mur doit être repeint."),
+("Envie de couleur ? Mur d'accent, pièce entière ou simple touche : on vous conseille la bonne teinte.","#Couleur #Decoration #Peinture #MurDAccent","Conseil couleur offert lors de la visite de devis."),
+("Les teintes du moment : vert sapin, blanc cassé, terracotta, bleu brume. Laquelle pour votre salon ?","#Tendances #Couleurs #Decoration #Peinture","Les teintes du moment : vert sapin, blanc cassé, terracotta, bleu brume."),
+("Vos combles peuvent devenir une pièce. Isolation RGE, plaques de plâtre, peinture : une seule équipe.","#Combles #AmenagementCombles #IsolationRGE #Pelussin","Aménagement de combles : isolation RGE, plâtrerie, peinture."),
+("Même pièce, autre vie. Plafond, cloisons, bandes et peinture : tout par nos équipes.","#AvantApres #Renovation #Plaquiste #Chavanay","Avant / après : rénovation complète d'une pièce de vie."),
+("Harmonie Peinture, depuis 1999 à Malleval.","#HarmoniePeinture #Malleval #Loire42","Harmonie Peinture, depuis 1999 à Malleval."),
+("Plafonds hauts, cages d'escalier, mezzanines : on a les échelles, et le savoir-faire pour travailler en sécurité.","#CageDEscalier #Plafond #Peinture #Vienne","Peinture de plafonds hauts et de cages d'escalier."),
+("Plus de 50 chantiers chaque année, de Chavanay à Annonay. Le vôtre est le prochain ?","#Renovation #Annonay #Chavanay #PeintreEnBatiment","Plus de 50 chantiers par an autour de Malleval."),
+("Les finitions, c'est là que tout se joue : angles nets, raccords invisibles, plinthes propres.","#Finitions #Peinture #SavoirFaire","Des finitions nettes : angles, raccords, plinthes."),
+("« Société hyper compétente, avec une superbe équipe. » Merci Sébastien.","#AvisClient #Equipe #Artisan","Merci Sébastien pour votre avis."),
+("Une salle de bains qui vous ressemble : faïence, peinture adaptée aux pièces humides, finitions soignées.","#SalleDeBains #Faience #Peinture #Roussillon","Faïence et peinture de salle de bains."),
+("Devis gratuit, visite sur place. Laurent vient voir votre projet et vous remet un devis détaillé, poste par poste.","#DevisGratuit #Artisan #Malleval","Devis gratuit après visite sur place : 06 69 19 05 77."),
+("On protège, on prépare, on peint. Sols bâchés, meubles protégés, chantier rendu propre.","#Chantier #Peinture #Methode","Chantier protégé et rendu propre."),
+("Mat, velours ou satiné ? Le bon choix dépend de la pièce. Notre mémo, à garder.","#ConseilDePeintre #Finitions #Decoration","Mat, velours ou satiné : quelle finition pour quelle pièce ?"),
+("Fenêtres, portes, boiseries : on fait aussi. Ponçage, sous-couche adaptée, laque soignée.","#Boiseries #Menuiseries #Peinture #Ampuis","Peinture de fenêtres, portes et boiseries."),
+("Faïence, peinture, finitions nettes : une salle de bains terminée par nos équipes.","#SalleDeBains #Chantier #Serrieres","Salle de bains : faïence et peinture."),
+("Le travail bien fait, du sol au plafond.","#HarmoniePeinture #ArtisanPeintre","Le travail bien fait, du sol au plafond."),
+("Carrelage posé au millimètre : support préparé, pose de niveau, joints réguliers.","#Carrelage #Carreleur #Renovation #SaintClairDuRhone","Pose de carrelage sols et murs."),
+("Un seul interlocuteur : Laurent Koy vous suit du devis à la réception. Pas de commercial, pas d'intermédiaire.","#ChefDEntreprise #Confiance #Artisan","Un seul interlocuteur, du devis à la fin du chantier."),
+("Un pot de peinture ne fait pas un peintre. La préparation, le geste et les bons produits, si.","#Peintre #Metier #SavoirFaire","La préparation et les bons produits font la différence."),
+("« Efficacité, sérieux et résultat professionnel. » Merci Annick.","#AvisClient #Artisan","Merci Annick pour votre avis."),
+("Isoler, avec des aides : entreprise certifiée Qualibat RGE, nos travaux d'isolation peuvent ouvrir droit à MaPrimeRénov', aux primes énergie et à l'éco-PTZ, sous conditions.","#IsolationRGE #MaPrimeRenov #Qualibat #BourgArgental","Isolation RGE : aides possibles, devis gratuit."),
+("Bureaux, commerces, locaux : on intervient aussi, avec un chantier organisé pour ne pas arrêter votre activité.","#Professionnels #Commerce #Bureaux #Vienne","Peinture et rénovation de bureaux et commerces."),
+("Le geste juste, à chaque étape.","#SavoirFaire #Peinture #Carrelage #Platrerie","Le geste juste, à chaque étape du chantier."),
+("25 ans de métier, la même exigence. Depuis 1999, chaque chantier est suivi comme le premier.","#Depuis1999 #Artisan #Malleval","25 ans d'expérience en peinture et plâtrerie."),
+("Jusqu'à 30 % de la chaleur d'une maison mal isolée s'échappe par la toiture (ADEME). Isoler les combles est souvent le chantier le plus rentable.","#Isolation #ComblesPerdus #EconomiesDEnergie #Pelussin","Combles perdus : jusqu'à 30 % de chaleur perdue par le toit."),
+("On choisit les bons produits, pour que ça dure : peintures professionnelles adaptées à chaque pièce et chaque support.","#Peinture #Qualite #Renovation","Peintures professionnelles adaptées à chaque support."),
+("Des murs calmes, une pièce qui respire : murs repris, peinture mate, sol posé.","#Chambre #Peinture #SolStratifie #SaintPierreDeBoeuf","Chambre rénovée : murs, peinture et sol."),
+("Vous vendez ou vous louez ? Repeignez d'abord : des murs frais donnent envie de visiter.","#Immobilier #VenteMaison #Peinture #Annonay","Repeindre avant de vendre ou de louer."),
+("5 artisans, 0 sous-traitant. La même équipe du premier au dernier jour.","#Equipe #Artisans #PeintreEnBatiment","Tous nos chantiers sont réalisés par nos 5 artisans salariés."),
+("Fissures, trous, bosses : on rebouche tout avant de peindre, pour un support parfaitement lisse.","#Fissures #Rebouchage #Plaquiste #Condrieu","Réparation de fissures et de plaques de plâtre."),
+("« Excellent travail. » Merci Christine.","#AvisClient #Peinture","Merci Christine pour votre avis."),
+("Façades : diagnostic du support, nettoyage, peinture adaptée aux intempéries.","#Facade #PeintureExterieure #Ravalement #Roussillon","Peinture de façades et extérieurs."),
+("On arrive près de chez vous : Malleval, Chavanay, Pélussin, Condrieu, Vienne, Roussillon, Serrières, Annonay, dans un rayon d'environ 35 km.","#Malleval #Chavanay #Pelussin #Condrieu #Vienne #Annonay","Nous intervenons dans un rayon d'environ 35 km autour de Malleval."),
+("Une couleur par pièce ? Lumière, usage, mobilier : on choisit ensemble.","#Couleur #Decoration #ConseilDePeintre","Conseil couleur offert lors de la visite."),
+("Harmonie Peinture. Rénovation, Malleval, Loire.","#HarmoniePeinture #Renovation #Loire42","Harmonie Peinture, rénovation intérieure et extérieure."),
+("Faïence et peinture de salle de bains : des matériaux faits pour l'humidité, posés pour durer.","#SalleDeBains #Faience #Carrelage","Faïence et peinture de salle de bains."),
+("La lumière, ça se travaille : murs clairs, plafond net, menuiseries reprises.","#Sejour #Peinture #Interieur #Ampuis","Séjour repeint : murs, plafond et menuiseries."),
+("Volets et boiseries extérieures : c'est la saison. Une peinture bien posée protège le bois pour des années.","#Volets #Boiseries #PeintureExterieure","Peinture de volets et boiseries extérieures."),
+("Chaque mur, un sans-faute.","#HarmoniePeinture #Peinture #Platrerie","Chaque mur, un sans-faute."),
+("Un projet ? Parlons-en. Laurent vous rappelle, vient voir votre projet et vous remet un devis gratuit et sans engagement. 06 69 19 05 77.","#DevisGratuit #PeintreEnBatiment #Malleval #Vienne","Devis gratuit et sans engagement : 06 69 19 05 77."),
+]
+L=json.load(open('list.json'))
+assert len(C)==len(L)==50
+out=['# Harmonie Peinture · 50 posts prêts à publier','','Format 1080 × 1350 px (Instagram, Facebook). Rythme : 3 posts par semaine (lundi, mercredi, vendredi, vers 18 h), environ 4 mois de contenu. Pour la fiche Google, publier la même image avec le texte « Google ».','','Photos : les posts « Chantier » et « Avant / après » montrent des chantiers Harmonie Peinture ; les autres visuels sont des photos d\'illustration libres de droits (Unsplash), à remplacer au fil de l\'eau par vos propres chantiers.','']
+for i,(n,(t,h,g)) in enumerate(zip(L,C)):
+    out+= [f'## {n}', f'**Instagram / Facebook :** {t}', h, f'**Google :** {g}','']
+open('legendes.md','w').write('\n'.join(out))
+print('ok')
