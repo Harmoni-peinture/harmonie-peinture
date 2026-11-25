@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-SITE = "https://www.harmonie-peinture.fr"   # domaine à confirmer
+SITE = "https://www.harmoniepeinture42.com"   # domaine à confirmer
 TEL = "06 69 19 05 77"
 TEL_INT = "+33669190577"
 TEL2 = "06 12 21 27 58"
