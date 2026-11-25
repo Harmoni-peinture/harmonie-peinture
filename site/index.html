@@ -258,8 +258,8 @@ const lbx=$('#lbx');$$('#gal button').forEach(b=>b.addEventListener('click',()=>
 lbx.addEventListener('click',e=>{if(e.target===lbx||e.target.classList.contains('x'))lbx.close()});
 /* formulaire */
 const FORM_CONFIG={
-  endpoint:'',            // ex. 'https://api.web3forms.com/submit' ou 'https://formspree.io/f/xxxx'
-  accessKey:'',           // clé Web3Forms le cas échéant
+  endpoint:'https://api.web3forms.com/submit',          // ex. 'https://api.web3forms.com/submit' ou 'https://formspree.io/f/xxxx'
+  accessKey:'b0a91e20-5b0e-45e0-9aba-47daef15de21',          // clé Web3Forms le cas échéant
   to:'Harmonie Peinture'
 };
 const f=$('#f'),m=$('#m'),sb=$('#sb');
